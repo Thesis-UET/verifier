@@ -1,0 +1,77 @@
+.qr-scan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(45deg,#f1a6a6 25%,rgba(169, 163, 163, 0) 25%,rgba(239,239,239,0) 75%,#ef6b6b 75%,#efefef),linear-gradient(45deg,#210303 25%,rgba(239,239,239,0) 25%,rgba(239,239,239,0) 75%,#efefef 75%,#efefef);;
+  min-height: 95vh;
+}
+
+.action-button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.video-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.video-preview {
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 60vw;
+}
+
+.qr-result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.qr-scan-container >p:first-child {
+  color: #858585;
+  text-align: center;
+}
+
+.base-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  /* Set your primary color */
+  color: #fff; /* Set text color */
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #3498db; 
+}
+
+.delete-btn {
+  background-color: red; 
+}
+
+.error-msg {
+  color: red;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .video-preview {
+    max-width: unset;
+    width: 100%;
+  }
+  
+}
